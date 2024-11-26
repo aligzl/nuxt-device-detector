@@ -1,0 +1,49 @@
+{
+  "name": "cloudflare-device-detector",
+  "version": "1.0.0",
+  "description": "Lightweight device detector library that works with Cloudflare Workers and Edge Runtime",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint"
+  },
+  "keywords": [
+    "device-detector",
+    "user-agent",
+    "parser",
+    "cloudflare",
+    "edge",
+    "browser",
+    "mobile"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.0",
+    "vitest": "^0.31.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/cloudflare-device-detector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aligzl/nuxt-device-detector/issues"
+  },
+  "homepage": "https://github.com/aligzl/nuxt-device-detector#readme"
+}

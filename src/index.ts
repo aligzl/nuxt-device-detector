@@ -105,8 +105,8 @@ export class DeviceDetector {
 // };
 
 // Server tarafı için helper
-export const getDeviceInfo = (headers: Headers): DeviceDetectorResult => {
-  const userAgent = headers.get('user-agent') || '';
+export const getDeviceInfo = (userAgent): DeviceDetectorResult => {
+  
   const detector = new DeviceDetector();
   return detector.parse(userAgent);
 };
